@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "www",
+    "site": "autonomy-places-dev-console",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrite": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
