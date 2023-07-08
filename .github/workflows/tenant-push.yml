@@ -5,13 +5,14 @@ on:
       - tenant/*
 jobs:
   lint:
+    defaults:
+      run:
+        working-directory: ./tenant
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: "npm"
-          cache-dependency-path: ./tenant/package-lock.json
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm ci
