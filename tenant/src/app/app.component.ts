@@ -12,6 +12,5 @@ export class AppComponent {
     { title: 'レポート', url: '/report', icon: 'document' },
     { title: '設定', url: '/setting', icon: 'settings' },
   ];
-  public labels = [];
   constructor() {}
 }
