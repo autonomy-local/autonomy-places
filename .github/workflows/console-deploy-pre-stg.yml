@@ -12,12 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: git fetch origin ${{ github.base_ref}} --depth=1
-      - id: diff
-        run: echo "::set-output name=changed::$(git diff --name-only origin/${{ github.base_ref }} HEAD --relative ./console | wc -l)"
-      - if: ${{ steps.diff.outputs.changed != 0 }}
-        run: npm ci && npm run build
-        working-directory: ./console
+      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           entryPoint: ./console
