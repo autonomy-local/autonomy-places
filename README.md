@@ -8,7 +8,7 @@
 | LP | autonomy-places-dev | https://autonomy-places-dev.web.app/ |
 | プロダクト管理者用App | autonomy-places-dev-console | https://autonomy-places-dev-console.web.app/ |
 | ユーザー用App | autonomy-places-dev-customer | |
-| 提供者用App | autonomy-places-dev-tenant | |
+| 提供者用App | autonomy-places-dev-tenant | https://autonomy-places-dev-tenant.firebaseapp.com/ |
 | 窓口用App | autonomy-places-dev-counter | |
 
 # 各アプリケーション
