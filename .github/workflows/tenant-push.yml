@@ -5,9 +5,6 @@ on:
       - tenant/*
 jobs:
   lint:
-    defaults:
-      run:
-        working-directory: ./tenant
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v3
