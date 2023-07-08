@@ -19,6 +19,9 @@ jobs:
         run: npm ci && npm run build
         working-directory: ./console
   preview:
+    defaults:
+      run:
+        working-directory: ./console
     runs-on: ubuntu-latest
     needs: build
     steps:
